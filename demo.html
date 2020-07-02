@@ -13,21 +13,17 @@
     <div id="root"></div>
     <script type="text/babel">
 
-    function App() {
-      return React.createElement("div", null, [
+    
+function component1(){
+  return React.createElement('div', null, [
+    React.createElement('h1', null, 'first paragraph'),
+    React.createElement('h2', null, 'second paragraph'),
+    React.createElement('h3', null, 'third paragraph'),
 
-      React.createElement("h1", null, "Hello, world!"),
-      React.createElement("h2", null, "Hello, world!"),
-      React.createElement("h3", null, "test"),
-  
-
-      ])
-    }
-
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById('root')
-      );
+    
+  ])
+}
+ReactDOM.render(React.createElement(component1),document.querySelector("#root"))
 
     </script>
     <!--
