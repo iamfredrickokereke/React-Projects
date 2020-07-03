@@ -16,6 +16,8 @@
     
 //ReactDOM.render(React.createElement('h1',null,'React works!'),document.querySelector('#root'))
 
+//ReactDOM.render(React.createElement('h1',null,'React works!'),document.querySelector('#root'))
+
 function component1(){
   return React.createElement('h1', null, 'i am a component - 1')
 }
@@ -27,11 +29,17 @@ function component2(){
 function component3(){
   return React.createElement('div', null, [
     React.createElement('h1', null, 'Our Amazing App Header'),
-    React.createElement('p', null, `The current time is ${new Date.now.toLocaleString}`)
+    React.createElement('p', null, `The current time is ${new Date().toLocaleString()}`),
+    React.createElement('small', null, 'All right reserved')
   ])
 }
 
-ReactDOM.render(React.createElement(component3), document.querySelector('#root'))
+// 
+
+
+setInterval( function () {
+  ReactDOM.render(React.createElement(component3), document.querySelector('#root'))
+},1000)
 
     </script>
     <!--
