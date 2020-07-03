@@ -14,16 +14,24 @@
     <script type="text/babel">
 
     
-function component1(){
-  return React.createElement('div', null, [
-    React.createElement('h1', null, 'first paragraph'),
-    React.createElement('h2', null, 'second paragraph'),
-    React.createElement('h3', null, 'third paragraph'),
+//ReactDOM.render(React.createElement('h1',null,'React works!'),document.querySelector('#root'))
 
-    
+function component1(){
+  return React.createElement('h1', null, 'i am a component - 1')
+}
+
+function component2(){
+  return React.createElement('h1', null, 'i am a component - 2')
+}
+
+function component3(){
+  return React.createElement('div', null, [
+    React.createElement('h1', null, 'Our Amazing App Header'),
+    React.createElement('p', null, `The current time is ${new Date.now.toLocaleString}`)
   ])
 }
-ReactDOM.render(React.createElement(component1),document.querySelector("#root"))
+
+ReactDOM.render(React.createElement(component3), document.querySelector('#root'))
 
     </script>
     <!--
