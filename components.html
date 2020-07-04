@@ -1,0 +1,28 @@
+
+function App(){
+    return (
+      
+        <>
+        <Header />
+        <Content />      
+        <Footer />
+        </>   
+    )  
+  }
+  
+
+  function Header(){
+    return <h1 className="color"> Our Amazing App </h1>
+  }
+  
+  function Content(){
+    return <p> The current time is {new Date().toLocaleString()} </p>
+  }
+  
+  function Footer(){
+    return <small> All rights reserved </small>
+  }
+  
+  setInterval(() => {
+    ReactDOM.render(<App />, document.querySelector('#root'))
+  },1000)
