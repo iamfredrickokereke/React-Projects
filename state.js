@@ -10,6 +10,8 @@ const pets = [
 ]
 
 function App(){
+
+
   return (
     
       <>
@@ -21,13 +23,6 @@ function App(){
         
       </ul>
 
-      <>
-          <button>Increase Likes</button>
-          <button>Decrease Likes</button>
-
-
-          <h2>This page has been liked {} times</h2>
-        </>
       <Footer />
       </>   
   )  
