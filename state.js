@@ -20,6 +20,14 @@ function App(){
         {pets.map( pet => <Pet name={pet.name} species={pet.species} age={pet.age} key={pet.id} /> )}
         
       </ul>
+
+      <>
+          <button>Increase Likes</button>
+          <button>Decrease Likes</button>
+
+
+          <h2>This page has been liked {} times</h2>
+        </>
       <Footer />
       </>   
   )  
