@@ -35,6 +35,8 @@ function LikeArea() {
     <>
     <button>Increase Like</button>
     <button>Decrease Like</button>
+
+  <p>There are {} number of likes on this page!</p>
     </>
   )
 }
