@@ -32,7 +32,10 @@ function App(){
 
 function LikeArea() {
   return(
-    
+    <>
+    <button>Increase Like</button>
+    <button>Decrease Like</button>
+    </>
   )
 }
 
