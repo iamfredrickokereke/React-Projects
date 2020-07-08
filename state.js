@@ -17,6 +17,8 @@ function App(){
       <>
       <Header />
       <Content />
+
+      <LikeArea />
       <ul>
        
         {pets.map( pet => <Pet name={pet.name} species={pet.species} age={pet.age} key={pet.id} /> )}
@@ -26,6 +28,12 @@ function App(){
       <Footer />
       </>   
   )  
+}
+
+function LikeArea() {
+  return(
+    
+  )
 }
 
 function Pet(props){
