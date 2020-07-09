@@ -31,6 +31,16 @@ function App(){
 }
 
 function LikeArea() {
+
+  
+
+  function increaseHandler() {
+    
+  }
+
+  function decreaseHandler() {
+    
+  }
   return(
     <>
     <button onClick={}>Increase Like</button>
