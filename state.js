@@ -33,8 +33,8 @@ function App(){
 function LikeArea() {
   return(
     <>
-    <button>Increase Like</button>
-    <button>Decrease Like</button>
+    <button onClick={}>Increase Like</button>
+    <button onClick={}>Decrease Like</button>
 
   <p>There are {} number of likes on this page!</p>
     </>
