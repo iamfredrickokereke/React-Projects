@@ -32,7 +32,7 @@ function App(){
 
 function LikeArea() {
 
-  
+  const [LikeCount, setLikeCount] = useState(0)
 
   function increaseHandler() {
     
@@ -46,7 +46,7 @@ function LikeArea() {
     <button onClick={}>Increase Like</button>
     <button onClick={}>Decrease Like</button>
 
-  <p>There are {} number of likes on this page!</p>
+  <p>There are {LikeCount} number of likes on this page!</p>
     </>
   )
 }
