@@ -35,7 +35,7 @@ function LikeArea() {
   const [LikeCount, setLikeCount] = useState(0)
 
   function increaseHandler() {
-    
+    return LikeCount + 1
   }
 
   function decreaseHandler() {
