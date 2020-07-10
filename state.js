@@ -40,8 +40,11 @@ function LikeArea() {
     })
   }
 
-  function decreaseHandler() {
-    
+
+  function decreaseHandler(prev) {
+    setLikeCount(function (prev) {
+      return prev - 1
+    })
   }
   return(
     <>
